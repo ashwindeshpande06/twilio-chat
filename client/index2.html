@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>Chat Example: Agent Side</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<link rel="stylesheet" href="/css/bootstrap.min.css">-->
+        <!--<link rel="stylesheet" href="/css/bootstrap-responsive.min.css">-->
+        <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" type="text/css" />-->
+        <link rel="stylesheet" href="/css/style1.css" type="text/css" />
+
+    </head>
+
+    <body>
+        <!--<div class="box box-warning direct-chat direct-chat-warning">-->
+        <!--  <div class="box-header with-border">-->
+        <!--    <h3 class="box-title">Commx Chat</h3>-->
+        <!--    <div class="box-tools pull-right">-->
+        <!--      <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>-->
+        <!--      <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>-->
+        <!--    </div>-->
+        <!--  </div>-->
+        <!-- /.box-header -->
+        <!--  <div class="box-body">-->
+        <!-- Conversations are loaded here -->
+        <!--    <div class="direct-chat-messages">-->
+        <!--    </div>-->
+        <!--/.direct-chat-messages-->
+        <!--  </div>-->
+        <!-- /.box-body -->
+        <!--  <div class="box-footer">-->
+        <!--    <form action="#" method="post">-->
+        <!--      <div class="input-group">-->
+        <!--        <input type="text" name="message" placeholder="Type Message ..." class="form-control">-->
+        <!--        <span class="input-group-btn">-->
+        <!--          <button type="button" class="btn btn-warning btn-flat">Send</button>-->
+        <!--        </span>-->
+        <!--      </div>-->
+        <!--    </form>-->
+        <!--  </div>-->
+        <!-- /.box-footer-->
+        <!--</div>-->
+        Testing .....
+        <div id="twichatcontainer" style="width: 300px; height: 100px"></div>
+        <script type="text/javascript" src="//media.twiliocdn.com/taskrouter/js/v1.9.3/taskrouter.min.js"></script>
+        <!--<script type="text/javascript" src="//media.twiliocdn.com/taskrouter/js/v2/twilio-taskrouter-worker.min.js"></script>-->
+        <script type="text/javascript" src="/js/bundle2.js"></script>
+        <script>
+            var options = {
+                device: 'Windows',
+                identity: 'Agent1',
+                chatContainer: 'twichatcontainer',
+                chatTitle: 'ProxChat',
+                isCustomer: false
+            };
+            document.addEventListener('DOMContentLoaded', function () {
+                new TwiAgentWebChat.webchat(options);
+            }, false);
+        </script>
+
+    </body>
+
+</html>
